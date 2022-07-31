@@ -1,0 +1,55 @@
+.intro {
+  background-color: $color-intro;
+  height: 76rem;
+  width: 100%;
+
+  &__button-section {
+    width: 34rem;
+    display: flex;
+    justify-content: space-between;
+
+    &--orange {
+      display: block;
+      background-color: $color-orange;
+      width: 15rem;
+      height: 5rem;
+      border: none;
+      color: #fff;
+      font-size: 1.6rem;
+      text-align: center;
+      transition: all 0.3s;
+
+      &:hover {
+        border: none;
+        color: $color-orange;
+        background-color: transparent;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__section {
+    display: flex;
+    padding: 12rem;
+    &--content {
+      margin-right: 18rem;
+      display: flex;
+      flex-direction: column;
+      width: 53.5rem;
+    }
+    &--paragraph {
+      margin-top: 6rem;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: $color-secondary-blue-dark;
+      margin-bottom: 6.3rem;
+    }
+    &--img {
+      display: block;
+      width: 52rem;
+      height: auto;
+      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+}

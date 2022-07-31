@@ -1,0 +1,32 @@
+.heading {
+  color: $color-main-blue;
+  font-size: 2.4rem;
+}
+
+.heading__primary {
+  color: $color-secondary-blue-dark;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  display: block;
+  width: 50rem;
+}
+
+.heading__secondary {
+  font-size: 4rem;
+  color: #fff;
+  line-height: 2.7rem;
+}
+
+.heading__tertiary {
+  padding: 1rem 10rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(34, 53, 111, 0.5);
+  text-transform: uppercase;
+}
+
+///supporting classes
+.margin-small {
+  margin-bottom: 4rem;
+}

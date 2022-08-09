@@ -12,3 +12,22 @@
     color: $color-main-blue;
   }
 }
+
+.intro__button--orange {
+  display: block;
+  background-color: $color-orange;
+  width: 15rem;
+  height: 5rem;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:hover {
+    border: none;
+    color: $color-orange;
+    background-color: transparent;
+    font-weight: 600;
+  }
+}

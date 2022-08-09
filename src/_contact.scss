@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  &__img {
+    max-width: 48rem;
+    max-height: 80rem;
+  }
+
+  &__container {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__paragraph {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.7;
+    color: $color-secondary-blue-dark;
+  }
+  &__bold--blue {
+    color: $color-main-blue;
+  }
+}

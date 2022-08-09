@@ -23,6 +23,10 @@
   font-weight: 300;
   color: $color-secondary-blue-dark;
   text-transform: uppercase;
+
+  &--white {
+    color: #fff;
+  }
 }
 
 ///supporting classes

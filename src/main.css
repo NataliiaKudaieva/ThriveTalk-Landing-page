@@ -80,6 +80,9 @@ html {
   color: #22356f;
   text-transform: uppercase;
 }
+.heading__tertiary--white {
+  color: #fff;
+}
 
 .margin-small {
   margin-bottom: 4rem;
@@ -122,24 +125,34 @@ html {
 }
 
 .btn {
-  padding: 1.2rem 4rem;
+  display: block;
+  width: 15rem;
+  height: 4.5rem;
   background-color: #62d0df;
   color: #fff;
   border: none;
   border-radius: 20px;
   font-size: 1.4rem;
   transition: all 0.2s;
+  font-weight: 600;
 }
 .btn:hover {
   background-color: #fff;
   color: #62d0df;
+  width: 20%;
+}
+.btn--transparent {
+  background-color: transparent;
+  color: #62d0df;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .intro__button--orange {
   display: block;
-  background-color: #fab63e;
   width: 15rem;
   height: 5rem;
+  background-color: #fab63e;
   border: none;
   color: #fff;
   font-size: 1.6rem;
@@ -339,17 +352,87 @@ html {
   max-height: 80rem;
 }
 .contact__container {
-  padding: 10rem;
+  padding: 5rem 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.contact__container--blue {
+  display: flex;
+  justify-content: space-between;
+  background-color: #22356f;
+}
 .contact__paragraph {
+  padding-right: 2rem;
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.7;
   color: #22356f;
 }
+.contact__paragraph--white {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
 .contact__bold--blue {
   color: #62d0df;
+}
+.contact__bold--white {
+  color: #fff;
+  font-size: 6.4rem;
+}
+
+.footer {
+  max-height: 46rem;
+}
+.footer__content {
+  display: flex;
+}
+.footer__img {
+  height: auto;
+}
+.footer__container {
+  display: flex;
+}
+.footer__details {
+  flex-basis: 33.3%;
+  padding: 5rem 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer__heading {
+  font-size: 1.4rem;
+  color: #22356f;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+.footer__paragraph {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: rgba(34, 53, 111, 0.5);
+}
+.footer__phone {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 2rem 0 3rem;
+  color: rgba(34, 53, 111, 0.5);
+}
+.footer__link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #62d0df;
+}
+.footer__link:hover {
+  color: #22356f;
+}
+.footer__copyright {
+  max-width: 148rem;
+  padding: 3rem 18rem;
+  background-color: #62d0df;
+}
+.footer__copyright--text {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

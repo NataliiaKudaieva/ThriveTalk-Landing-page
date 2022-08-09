@@ -6,18 +6,37 @@
   }
 
   &__container {
-    padding: 10rem;
+    padding: 5rem 12rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &--blue {
+      display: flex;
+      justify-content: space-between;
+      background-color: $color-secondary-blue-dark;
+    }
   }
+
   &__paragraph {
+    padding-right: 2rem;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 1.7;
     color: $color-secondary-blue-dark;
+
+    &--white {
+      color: #fff;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+    }
   }
   &__bold--blue {
     color: $color-main-blue;
+  }
+
+  &__bold--white {
+    color: #fff;
+    font-size: 6.4rem;
   }
 }

@@ -5,6 +5,19 @@
     max-height: 80rem;
   }
 
+  &__link {
+    color: $color-main-white;
+  }
+
+  &__link:link {
+    text-decoration: none;
+  }
+
+  &__link:active,
+  &__link:hover {
+    color: $color-orange;
+  }
+
   &__container {
     padding: 5rem 12rem;
     display: flex;

@@ -1,33 +1,39 @@
 .explanation {
-  height: 60rem;
   background-color: $color-main-blue;
+
+  &__heading {
+    align-self: flex-start;
+    margin-bottom: 4rem;
+  }
 
   &__container {
     display: flex;
-    flex: 0 0 70%;
-    justify-content: space-between;
+    flex: 0 0 26.3%;
+    height: 60.7rem;
   }
 
   &__content {
-    padding: 17.5rem;
+    margin: 26.7rem 10.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__paragraph {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 300;
     color: #fff;
-    line-height: 1.4;
+    line-height: 1.8;
+    text-align: left;
   }
 
   &--bold {
     font-weight: 500;
+    display: inline-block;
   }
 
   &__img {
-    max-width: 52rem;
+    max-width: 100%;
     height: 100%;
   }
 }

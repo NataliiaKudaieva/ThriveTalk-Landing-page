@@ -11,13 +11,16 @@
 html {
   font-size: 62.5%;
   font-family: Roboto, sans-serif;
+  background-color: $color-intro;
+  box-sizing: border-box;
 }
 
 #wrapper {
-  width: 120rem;
-  margin: 0 auto;
+  max-width: 120rem;
 }
 
+////mixins
+///
 @mixin customBlockPoint {
   content: "";
   display: block;
@@ -36,4 +39,23 @@ html {
   height: 1rem;
   border-radius: 50%;
   margin-right: 2rem;
+}
+
+@mixin centreBlock {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+/////////////media queries
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
 }

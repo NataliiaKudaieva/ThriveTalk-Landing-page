@@ -1,45 +1,15 @@
 .btn {
-  display: block;
+  display: inline-block;
   width: 15rem;
   height: 5rem;
-  background-color: $color-main-blue;
-  color: #fff;
   border: none;
   border-radius: 50px;
-  font-size: 1.4rem;
-  transition: all 0.2s;
-  font-weight: 600;
-
-  &:hover {
-    background-color: #fff;
-    color: $color-main-blue;
-    width: 15%;
-  }
 
   &--transparent {
     background-color: transparent;
     color: $color-main-blue;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-  }
-}
-
-.intro__button--orange {
-  display: block;
-  width: 15rem;
-  height: 5rem;
-  background-color: $color-orange;
-  border: none;
-  color: #fff;
-  font-size: 1.6rem;
-  text-align: center;
-  transition: background-color 0.3s;
-
-  &:hover {
-    border: none;
-    color: $color-orange;
-    background-color: transparent;
-    font-weight: 600;
   }
 }
 
@@ -51,29 +21,6 @@
     &:hover {
       width: 40%;
     }
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .btn {
-    font-size: 2rem;
-    width: 25rem;
-    height: 6rem;
-
-    &:hover {
-      width: 70%;
-    }
-  }
-  .intro__button--orange {
-    display: block;
-    width: 70%;
-    margin-right: 10rem;
-    height: 7rem;
-    background-color: $color-orange;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
   }
 }
 

@@ -4,18 +4,11 @@
   max-width: 144rem;
   margin: 0 auto;
 
-  &__button {
-    width: 34rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__section {
     padding: 0 10rem;
     width: 100%;
     background-color: $color-intro;
     display: flex;
-
     &--heading {
       color: $color-secondary-blue-dark;
       font-weight: 400;
@@ -43,44 +36,95 @@
       height: auto;
       clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
     }
+    &--button {
+      width: 34rem;
+      display: flex;
+      justify-content: space-between;
+      &--orange {
+        display: block;
+        width: 15rem;
+        height: 5rem;
+        background-color: $color-orange;
+        border: none;
+        color: #fff;
+        font-size: 1.6rem;
+        text-align: center;
+        transition: background-color 0.3s;
+
+        &:hover {
+          border: none;
+          color: $color-orange;
+          background-color: transparent;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 920px) {
   .intro__section {
+    padding: 0 20rem;
     background-color: $color-intro;
     display: flex;
     flex-direction: column-reverse;
+    &--content {
+      display: flex;
+      align-items: center;
+      width: 163%;
+    }
     &--heading {
       text-align: center;
+      font-weight: 400;
+      font-size: 4.2rem;
+    }
+    &--paragraph {
+      text-align: center;
+      font-size: 2.7rem;
     }
     &--img {
       display: none;
     }
+    &--button {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      &--orange {
+        width: 20rem;
+        margin-right: 10rem;
+        height: 7rem;
+        font-size: 2rem;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
-  .intro__button {
-    width: 280%;
-    display: flex;
-  }
+@media screen and (max-width: 579px) {
   .intro__section {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding: 0 20rem;
-
-    &--heading {
-      width: 250%;
-      font-weight: 400;
-      font-size: 4.2rem;
-    }
-
+    width: 150%;
     &--paragraph {
-      width: 250%;
-      text-align: center;
-      font-size: 2.7rem;
+      font-size: 4rem;
+    }
+    &--button {
+      &--orange {
+        width: 30rem;
+        height: 8rem;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .intro__section {
+    &--button {
+      width: 130%;
+      &--orange {
+        width: 35rem;
+        height: 8rem;
+        font-size: 3.2rem;
+      }
     }
   }
 }

@@ -114,7 +114,6 @@
     }
     &__item {
       flex: 0 1 100%;
-      flex-wrap: wrap;
       font-size: 4.6rem;
       &::after {
         width: 50%;
@@ -134,7 +133,6 @@
       margin-left: -5rem;
       flex: 0 1 100%;
       flex-wrap: wrap;
-      font-size: 4.6rem;
     }
   }
 }

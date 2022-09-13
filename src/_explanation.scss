@@ -45,6 +45,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    &__paragraph {
+      font-size: 3.1rem;
+    }
     &__img {
       width: 100%;
       max-height: 50rem;
@@ -55,11 +59,38 @@
 
 @media screen and (max-width: 768px) {
   .explanation {
-    width: 200%;
+    width: 100rem;
     &__img {
       width: 100%;
       max-height: 50rem;
       object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .explanation {
+    &__container {
+      width: 43rem;
+    }
+    &__content {
+      padding: 0;
+    }
+    &__paragraph {
+      font-size: 3.2rem;
+    }
+    &__img {
+      width: 100%;
+      max-height: 50rem;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .explanation {
+    &__content {
+      margin-left: -10rem;
     }
   }
 }

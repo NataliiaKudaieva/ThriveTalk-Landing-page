@@ -1,5 +1,6 @@
 .about {
   margin: 15rem 0 15rem;
+
   &__content {
     padding: 1rem 10rem;
     display: flex;
@@ -27,13 +28,15 @@
 
   &__container {
     display: flex;
+    width: 144rem;
+    flex-wrap: wrap;
   }
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 25%;
+    flex: 1 0 25%;
     font-size: 3.2rem;
     color: #fff;
     font-weight: 700;
@@ -61,6 +64,77 @@
     }
     &--darkblue {
       background-color: $color-tertiary-blue-light;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    width: 103rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .about {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__paragraph,
+    &__heading,
+    &__cta {
+      width: 60rem;
+      font-size: 3rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex: 0 1 50%;
+      flex-wrap: wrap;
+      font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about {
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex: 0 1 100%;
+      flex-wrap: wrap;
+      font-size: 4.6rem;
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about {
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-left: -5rem;
+      flex: 0 1 100%;
+      flex-wrap: wrap;
+      font-size: 4.6rem;
     }
   }
 }

@@ -3,32 +3,10 @@
   font-size: 2.4rem;
 }
 
-.heading__primary {
-  color: $color-secondary-blue-dark;
-  font-weight: 400;
-  font-size: 4.8rem;
-  line-height: 5.2rem;
-  display: block;
-  width: 50rem;
-}
-
 .heading__secondary {
   font-size: 4rem;
   color: #fff;
   line-height: 2.7rem;
-}
-
-.heading__tertiary {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  letter-spacing: 1px;
-  font-weight: 300;
-  color: $color-secondary-blue-dark;
-  text-transform: uppercase;
-
-  &--white {
-    color: #fff;
-  }
 }
 
 ///supporting classes

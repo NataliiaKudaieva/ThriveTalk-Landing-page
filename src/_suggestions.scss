@@ -63,14 +63,14 @@
   }
   &__heading {
     color: $color-secondary-blue-dark;
-    font-size: 2.8em;
+    font-size: 2.8rem;
     line-height: 1.7;
     font-weight: 400;
     text-align: center;
   }
 
   &__paragraph {
-    font-size: 1.6em;
+    font-size: 1.8rem;
     color: rgba(34, 53, 111, 0.5);
     font-weight: 300;
     padding: 3rem 5rem;
@@ -81,11 +81,25 @@
   .suggestions {
     &__container {
       display: flex;
-      width: 144rem;
+      width: 145rem;
       flex-wrap: wrap;
     }
     &__item {
       flex: 0 1 50%;
+    }
+
+    &__heading {
+      font-size: 3rem;
+    }
+    &__content {
+      width: 140rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__paragraph {
+      font-size: 2rem;
+      font-weight: 400;
     }
   }
 }
@@ -104,19 +118,61 @@
         width: 50%;
       }
     }
+    &__content {
+      width: 90rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__box {
+      flex: 0 1 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .suggestions {
+    &__container {
+      width: 103rem;
+    }
+    &__content {
+      width: 90rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 5rem 10rem;
+    }
+
+    &__heading {
+      font-size: 5rem;
+    }
+    &__box {
+      flex: 0 0 100%;
+      padding: 0;
+      margin-top: 5rem;
+    }
+
+    &__paragraph {
+      font-size: 3.5rem;
+    }
   }
 }
 
 @media screen and (max-width: 376px) {
   .suggestions {
     &__container {
+      width: 94rem;
+    }
+    &__content {
       display: flex;
       flex-wrap: wrap;
-      width: 95rem;
-      font-size: 4.6rem;
+      width: 68rem;
+      font-size: 4rem;
     }
     &__item {
       flex: 0 1 100%;
+    }
+    &__paragraph {
+      padding: 6rem 10rem;
     }
   }
 }

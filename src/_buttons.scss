@@ -10,6 +10,12 @@
     color: $color-main-blue;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-main-white;
+      width: 20rem;
+    }
   }
 }
 

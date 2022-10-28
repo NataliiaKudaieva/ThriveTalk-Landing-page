@@ -17,115 +17,132 @@
       display: block;
     }
     &--content {
-      margin-right: 18rem;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-content: center;
+      justify-content: space-evenly;
     }
+
     &--paragraph {
-      margin-top: 6rem;
       font-size: 2.4rem;
       line-height: 1.2;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       color: $color-secondary-blue-dark;
-      margin-bottom: 6.3rem;
     }
     &--img {
       display: block;
-      width: 52rem;
+      width: 60rem;
       height: auto;
-      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(
+        63% 0,
+        100% 0,
+        100% 59%,
+        85% 78%,
+        68% 100%,
+        32% 100%,
+        0 100%,
+        33% 43%,
+        51% 14%
+      );
+      object-fit: fill;
     }
-    &--button {
+    &--btn__container {
       width: 34rem;
       display: flex;
       justify-content: space-between;
-      &--orange {
-        display: block;
-        width: 15rem;
-        height: 5rem;
-        background-color: $color-orange;
-        border: none;
-        color: #fff;
-        font-size: 1.6rem;
-        text-align: center;
-        transition: background-color 0.3s;
-
-        &:hover {
-          border: none;
-          color: $color-orange;
-          background-color: transparent;
-          font-weight: 600;
-        }
-      }
     }
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 930px) {
   .intro__section {
-    padding: 0 20rem;
-    background-color: $color-intro;
+    padding: 5rem 0rem;
     display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 10rem;
+    flex-direction: column;
     &--content {
+      width: 100%;
       display: flex;
       align-items: center;
-      width: 163%;
+      text-align: left;
+    }
+    &--logo {
+      display: none;
     }
     &--heading {
       text-align: center;
       font-weight: 400;
-      font-size: 4.2rem;
+      font-size: 3rem;
+      padding: 0 3rem;
     }
     &--paragraph {
       text-align: center;
-      font-size: 2.7rem;
+      font-size: 2.4rem;
+      padding: 4rem 10rem;
+    }
+    &--img {
+      clip-path: none;
+      width: 100%;
+    }
+
+    &--btn__container {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .intro__section {
+    &--heading {
+      font-size: 3.2rem;
+      position: relative;
+      font-weight: 600;
+      &::after {
+        content: "";
+        width: 80%;
+        height: 3px;
+        background-color: $color-secondary-blue-dark;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+      }
+    }
+    &--paragraph {
+      font-size: 3rem;
+      padding: 5rem 4rem;
+    }
+    &--btn__container {
+      font-size: 1.8rem;
+    }
+    &--img {
+      min-height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro__section {
+    padding: 4rem 3rem;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    &--content {
+      width: 100%;
     }
     &--img {
       display: none;
     }
-    &--button {
+    &--btn__container {
       display: flex;
-      width: 100%;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      &--orange {
-        width: 20rem;
-        margin-right: 10rem;
-        height: 7rem;
-        font-size: 2rem;
-      }
+      justify-content: center;
+      gap: 3rem;
+      font-size: 2rem;
     }
-  }
-}
-
-@media screen and (max-width: 579px) {
-  .intro__section {
-    width: 150%;
-    &--paragraph {
-      font-size: 4rem;
-    }
-    &--button {
-      &--orange {
-        width: 30rem;
-        height: 8rem;
-        font-size: 3rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 579px) {
-  .intro__section {
-    &--button {
-      width: 130%;
-      &--orange {
-        width: 35rem;
-        height: 8rem;
-        font-size: 3.2rem;
-      }
+    &--btn {
+      font-size: 2.4rem;
     }
   }
 }

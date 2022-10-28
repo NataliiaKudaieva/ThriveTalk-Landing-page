@@ -1,3 +1,4 @@
+///basic sizes and functionality
 .btn {
   display: inline-block;
   width: 15rem;
@@ -19,26 +20,39 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+///btn orange in intro sec and contact sec
+.btn--orange {
+  display: block;
+  width: 15rem;
+  height: 5rem;
+  background-color: $color-orange;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  transition: all 0.4s ease-out;
+
+  &:hover {
+    border: none;
+    color: $color-orange;
+    background-color: transparent;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .btn {
-    width: 19rem;
-    height: 5rem;
-    font-size: 1.7rem;
+    font-size: 2rem;
     &:hover {
-      width: 40%;
+      width: 20rem;
     }
   }
 }
 
-@media screen and (max-width: 589px) {
-  .btn {
-    font-size: 2.5rem;
-    display: block;
-    width: 30rem;
-    height: 7rem;
-
-    &:hover {
-      width: 70%;
-    }
+@media screen and (max-width: 320px) {
+  .btn--orange {
+    font-size: 2.2rem;
+    width: 22rem;
+    height: 6rem;
   }
 }

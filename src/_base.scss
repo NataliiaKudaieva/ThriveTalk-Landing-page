@@ -1,6 +1,16 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 *::after,
@@ -17,6 +27,7 @@ html {
 
 #wrapper {
   max-width: 120rem;
+  margin: 0 auto;
 }
 
 ////mixins
@@ -46,16 +57,4 @@ html {
   top: 100%;
   left: 100%;
   transform: translate(-50%, -50%);
-}
-/////////////media queries
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 100%;
-  }
 }

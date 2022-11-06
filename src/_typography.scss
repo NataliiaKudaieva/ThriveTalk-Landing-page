@@ -9,6 +9,14 @@
   line-height: 2.7rem;
 }
 
+.heading__tertiary {
+  font-size: 1.6rem;
+  line-height: 23px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color-secondary-blue-dark;
+}
+
 ///supporting classes
 .margin-small {
   margin-bottom: 4rem;

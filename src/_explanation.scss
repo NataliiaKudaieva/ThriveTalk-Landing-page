@@ -1,22 +1,21 @@
 .explanation {
   background-color: $color-main-blue;
-  min-height: 68rem;
-  max-width: 155rem;
-  display: flex;
+  width: 100%;
   &__heading {
     align-self: flex-start;
     margin-bottom: 4rem;
   }
-
   &__container {
-    padding: 5rem 0;
+    width: 100%;
+    display: flex;
+    padding: 0;
   }
 
   &__content {
-    padding: 5rem 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 3rem 5rem;
   }
 
   &__paragraph {
@@ -33,26 +32,23 @@
   }
 
   &__img {
-    max-width: 100%;
     min-height: 100%;
+    flex: 1 0 50rem;
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1105px) {
   .explanation {
-    margin-top: 2rem;
-    width: 124rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    &__paragraph {
-      font-size: 3rem;
+    width: 100%;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__content {
+      padding: 5rem;
     }
     &__img {
-      width: 100%;
-      max-height: 50rem;
       object-fit: cover;
     }
   }
@@ -60,35 +56,24 @@
 
 @media screen and (max-width: 768px) {
   .explanation {
-    width: 100%;
-    &__img {
-      width: 100%;
-      max-height: 50rem;
-      object-fit: cover;
+    &__heading {
+      font-size: 3.2rem;
     }
-    &__paragraph {
-      font-size: 2.4rem;
+    &__content {
+      text-align: center;
+    }
+    &__paragraph,
+    &--bold {
+      font-size: 1.8rem;
+    }
+    &__img {
+      object-position: left;
     }
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 330px) {
   .explanation {
-    width: 120%;
-    &__content {
-      padding: 4rem;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &__paragraph {
-      font-size: 2.7rem;
-    }
-    &__img {
-      width: 100%;
-      max-height: 50rem;
-      object-fit: cover;
-    }
+    width: 105%;
   }
 }

@@ -1,24 +1,30 @@
 .about {
-  margin: 15rem 0 15rem;
-
+  height: max-content;
+  &__heading {
+    font-weight: 300;
+    padding-left: 5rem;
+    font-size: 1.8rem;
+    margin-right: 21%;
+  }
   &__content {
-    padding: 1rem 10rem;
+    padding: 5rem 0;
     display: flex;
-    width: 70%;
-    justify-content: space-between;
-    align-content: center;
+    flex-wrap: wrap;
   }
   &__paragraph {
-    max-width: 56rem;
+    align-self: center;
+    flex: 0 1 56rem;
     text-align: left;
     font-size: 2.4rem;
     color: $color-secondary-blue-dark;
     line-height: 1.4;
     margin-bottom: 7rem;
+    text-align: center;
   }
 
-  &__cta {
-    font-size: 1.6rem;
+  &__span {
+    flex: 1 0 100%;
+    font-size: 1.4rem;
     font-weight: 200;
     color: rgba(34, 53, 111, 0.5);
     text-transform: uppercase;
@@ -26,9 +32,9 @@
     text-align: center;
   }
 
-  &__container {
-    display: flex;
+  &__section {
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -64,75 +70,6 @@
     }
     &--darkblue {
       background-color: $color-tertiary-blue-light;
-    }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .about {
-    width: 103rem;
-  }
-}
-
-@media screen and (max-width: 578px) {
-  .about {
-    &__content {
-      display: flex;
-      flex-direction: column;
-    }
-    &__paragraph,
-    &__heading,
-    &__cta {
-      width: 60rem;
-      font-size: 3rem;
-      margin-top: 5rem;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about {
-    &__container {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    &__item {
-      flex: 0 1 50%;
-      flex-wrap: wrap;
-      font-size: 4rem;
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .about {
-    &__container {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    &__item {
-      flex: 0 1 100%;
-      font-size: 4.6rem;
-      &::after {
-        width: 50%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .about {
-    &__container {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    &__item {
-      margin-left: -5rem;
-      flex: 0 1 100%;
-      flex-wrap: wrap;
     }
   }
 }

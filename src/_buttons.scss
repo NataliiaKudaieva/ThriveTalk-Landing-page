@@ -42,17 +42,9 @@
 
 @media screen and (max-width: 768px) {
   .btn {
-    font-size: 2rem;
+    font-size: 1.6rem;
     &:hover {
       width: 20rem;
     }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .btn--orange {
-    font-size: 2.2rem;
-    width: 22rem;
-    height: 6rem;
   }
 }

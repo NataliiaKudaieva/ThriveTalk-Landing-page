@@ -7,6 +7,7 @@
   max-height: 15rem;
 
   &__container {
+    padding: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,15 +23,12 @@
     justify-content: center;
   }
 
-  &__li {
-    margin-right: 2rem;
-  }
-
   &__link {
     color: $color-secondary-blue-dark;
     text-decoration: none;
     font-size: 1.7rem;
     display: inline-block;
+    padding: 0 1rem;
 
     &::after {
       content: "";
@@ -94,8 +92,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__container {
-      padding-left: 3.5rem;
-    }
   }
 }

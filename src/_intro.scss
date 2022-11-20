@@ -113,3 +113,11 @@
     }
   }
 }
+
+@media screen and (max-width: 325px) {
+  .intro {
+    &__btn--container {
+      width: 100%;
+    }
+  }
+}

@@ -47,7 +47,6 @@
     flex: 1 0 23%;
     min-height: 36rem;
     position: relative;
-    padding: 0 1rem;
 
     &--white {
       font-size: 3.2rem;
@@ -134,7 +133,6 @@
   .about {
     &__item {
       flex: 1 0 100%;
-      padding: 1rem;
     }
   }
 }

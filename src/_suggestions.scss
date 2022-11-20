@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   &__item {
     display: flex;
     justify-content: center;
@@ -11,9 +12,8 @@
     font-size: 3.2rem;
     color: #fff;
     font-weight: 700;
-    // min-height: 48rem;
+    min-height: 48rem;
     position: relative;
-
     &::after {
       @include customBlockPoint;
     }
@@ -46,14 +46,20 @@
     }
   }
 
+  &__link,
+  &__link:link {
+    color: #fff;
+  }
+
   &__content {
-    // margin: 10rem 5rem 5rem;
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
   }
 
   &__box {
-    // flex-basis: 33.3%;
+    padding: 3rem 0;
+    flex: 1 0 32%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -71,16 +77,12 @@
     font-size: 1.8rem;
     color: rgba(34, 53, 111, 0.5);
     font-weight: 300;
-    // padding: 3rem 5rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .suggestions {
-    &__item {
-      flex: 0 1 51%;
-    }
-
     &__heading {
       font-size: 2rem;
     }
@@ -91,7 +93,10 @@
     }
     &__paragraph {
       font-size: 2rem;
-      font-weight: 400;
+      font-weight: 300;
+    }
+    &__item {
+      flex: 0 1 50%;
     }
   }
 }
@@ -99,7 +104,6 @@
 @media screen and (max-width: 768px) {
   .suggestions {
     &__item {
-      flex: 0 1 50%;
       font-size: 2.4rem;
       min-height: 36rem;
       font-weight: 500;
@@ -112,26 +116,27 @@
       flex-wrap: wrap;
     }
     &__box {
-      flex: 0 1 50%;
+      flex: 0 1 49%;
     }
   }
 }
 
 @media screen and (max-width: 476px) {
   .suggestions {
+    width: 100%;
+    &__section {
+      display: flex;
+    }
     &__item {
       flex: 1 0 100%;
     }
+
     &__content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      // margin: 5rem 10rem;
     }
 
-    &__heading {
-      font-size: 5rem;
-    }
     &__box {
       flex: 0 0 100%;
       padding: 0;
@@ -139,7 +144,7 @@
     }
 
     &__paragraph {
-      font-size: 3.5rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -149,14 +154,9 @@
     &__content {
       display: flex;
       flex-wrap: wrap;
-      width: 68rem;
-      font-size: 4rem;
     }
     &__item {
       flex: 0 1 100%;
-    }
-    &__paragraph {
-      padding: 6rem 10rem;
     }
   }
 }
